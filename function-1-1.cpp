@@ -1,10 +1,10 @@
 #include<iostream>
 
 //function declaration
-int sum(int array[], int size){
-    int sum = 0;
+int array_sum(int array[], int size){
+    int array_sum = 0;
     for (int i = 0; i < size; i++) {
-        sum = sum+array[i];
+        array_sum = array_sum+array[i];
     }
-    return sum;
+    return array_sum;
 };
