@@ -5,7 +5,7 @@ bool is_descending(int array[], int n){
         return false;
     }
     for (int i = 0; i < n; i++){
-        if (array[i]>array[i-1]){
+        if (array[i]<array[i-1]){
             return false;
         }
 
