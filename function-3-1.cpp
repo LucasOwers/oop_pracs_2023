@@ -1,7 +1,7 @@
 #include<iostream>
 
 bool is_fanarray(int array[], int n){
-    if (n <= 0){
+    if (n < 1|| n % 2 == 0){
         return false;
     }
     int center = n/2;
