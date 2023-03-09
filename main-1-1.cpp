@@ -7,7 +7,7 @@ int main(){
                        { 5, 6, 7, 8},
                        { 9, 1, 2, 3},
                        { 4, 5, 6, 7}};
-    int sum = sum_diagonal(array)
+    int sum = sum_diagonal(array);
     std::cout << "Sum of the main diagonal: " << sum << std::endl;
     return 0;
 }
