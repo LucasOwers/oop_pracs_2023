@@ -6,6 +6,6 @@ void print_matrix(int array[10][10]){
         for (int j = 0; j < 10; j++){
             cout << " " << array[i][j];
         }
-    endl;
+    cout << "\n";
     }
 }
