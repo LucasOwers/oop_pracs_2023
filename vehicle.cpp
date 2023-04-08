@@ -1,0 +1,16 @@
+
+#include "vehicle.h"
+using namespace std;
+
+Vehicle::Vehicle(int id){
+  ID = id;
+  timeOfEntry = time(nullptr);
+}
+
+int Vehicle::getID() const {
+  return ID;
+}
+
+time_t Vehicle::getEntryTime() const {
+    return timeOfEntry;
+}
