@@ -27,8 +27,13 @@ void Tesla::set_batteryPercentage(float batteryPercentage) {
 }
 
 void Tesla::chargeBattery(int mins){
-    while (batteryPercentage_ < 100){
-        batteryPercentage_ = (batteryPercentage_ + 0.5)*mins;
+    float chargePerMin = 0.5;
+    float maxCharge = 100.0;
+    float chargeToAdd = mins * chargePerMin;
+    if (batteryPercentage_ + chargeToAdd > maxCharge) {
+        batteryPercentage_ = maxCharge;
+    } else {
+        batteryPercentage_ += chargeToAdd;
     }
 }
 
@@ -36,7 +41,12 @@ void Tesla::chargeBattery(int mins){
 
 
 void Tesla::drive(int kms){
-    while (batteryPercentage_ > 0){
-       emissions_ += 74 * kms;
+    while (kms > 0 && batteryPercentage_ > 0){
+        emissions_ += 74 * kms;
+        batteryPercentage_ -= 0.1 * kms;
+        if (batteryPercentage_ < 0) {
+            batteryPercentage_ = 0;
+        }
+        kms--;
     }
 }
