@@ -7,6 +7,7 @@ public:
     Car(int price);
 
 
+
     int get_price() const;
     void set_price(int price);
 
@@ -16,8 +17,8 @@ public:
     virtual void drive(int kms);
 
 private:
-    int price;
-    int emissions;
+    int price_;
+    int emissions_;
 };
 
 #endif //CAR_H

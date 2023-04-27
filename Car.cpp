@@ -1,28 +1,30 @@
 #include "Car.h"
 
-Car::Car() : price(), emissions() {}
-Car::Car(int price) : price(price), emissions(0) {}
+Car::Car() : price_(), emissions_(0) {}
+Car::Car(int price) : price_(price), emissions_() {}
 
 
 int Car::get_price() const {
-    return price;
+    return price_;
 }
 
 void Car::set_price(int price) {
-    this->price = price;
+    this->price_ = price;
 }
 
 int Car::get_emissions() const {
-    return emissions;
+    return emissions_;
 }
 
 void Car::set_emissions(int emissions) {
-    this->emissions = emissions;
+    this->emissions_ = emissions;
 }
 
+
 void Car::drive(int kms){
-    emissions = kms*20;
+    emissions_ += 20 * kms;
 }
+
 
 
 
