@@ -15,21 +15,21 @@ Vehicle* parkingLot[max];
 // Prompt the user for the number and each type of vehicle they want to park
 // and create and fill an array of pointers to Vehicle objects
 int numCars, numBuses, numMotorbikes;
-cout << "Enter the number of cars: ";
+cout << "How many cars: ";
 cin >> numCars;
 for (int i = 0; i < numCars; i++) {
     parkingLot[numVehicles] = new Car(numVehicles + 1);
     numVehicles++;
 }
 
-cout << "Enter the number of buses: ";
+cout << "How many buses: ";
 cin >> numBuses;
 for (int i = 0; i < numBuses; i++) {
     parkingLot[numVehicles] = new Bus(numVehicles + 1);
     numVehicles++;
 }
 
-cout << "Enter the number of motorbikes: ";
+cout << "How many motorbikes: ";
 cin >> numMotorbikes;
 for (int i = 0; i < numMotorbikes; i++) {
     parkingLot[numVehicles] = new Motorbike(numVehicles + 1);

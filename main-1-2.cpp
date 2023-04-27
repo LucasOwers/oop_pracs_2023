@@ -10,7 +10,7 @@ int main() {
     ParkingLot lot(10);
     string type;
     while (lot.getCount() < 10) {
-        cout << "Enter vehicle type (car/bus/motorbike): ";
+        cout << "Enter a car, bus or motorbike: ";
         cin >> type;
         if (type == "car") {
             lot.parkVehicle(new Car(lot.getCount()+1));
@@ -22,11 +22,11 @@ int main() {
             lot.parkVehicle(new Motorbike(lot.getCount()+1));
         }
         else {
-            cout << "Invalid vehicle type\n";
+            cout << "dumbass listen better\n";
         }
     }
     int id;
-    cout << "Enter ID of vehicle to unpark: ";
+    cout << "Enter the ID of the vehicle you wish to unpark: ";
     cin >> id;
     lot.unparkVehicle(id);
     return 0;

@@ -7,7 +7,7 @@ using namespace std;
 class Vehicle {
 private:
   time_t timeOfEntry;
-  int                                                                                                                                                                   ID;
+  int id;                                                                                                                                                                   ID;
 
 public:
   Vehicle(int id);
@@ -16,8 +16,7 @@ public:
 
   virtual ~Vehicle() {}
 
-protected:
-    time_t getEntryTime() const;
+  time_t getEntryTime() const;
 };
 
 
