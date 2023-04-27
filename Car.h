@@ -5,6 +5,7 @@ class Car {
 public:
     Car();
     Car(int price);
+    int emissions_;
 
 
 
@@ -18,7 +19,7 @@ public:
 
 private:
     int price_;
-    int emissions_;
+
 };
 
 #endif //CAR_H
