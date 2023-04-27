@@ -9,7 +9,7 @@ int Car::get_price() const {
 }
 
 void Car::set_price(int price) {
-    this->price_ = price;
+    price_ = price;
 }
 
 int Car::get_emissions() const {
@@ -17,7 +17,7 @@ int Car::get_emissions() const {
 }
 
 void Car::set_emissions(int emissions) {
-    this->emissions_ = emissions;
+    emissions_ = emissions;
 }
 
 
