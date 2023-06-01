@@ -8,25 +8,24 @@ protected:
     std::tuple<int, int> coordinates;
     char entity;
 public:
-    GameUnit(int x, int y, char entityType) : coordinates(std::make_tuple(x, y)), entity(entityType) {}
+    GridUnit(int x, int y, char entityType) : coordinates(std::make_tuple(x, y)), entity(entityType) {}
 
     std::tuple<int, int> getCoordinates() {
         return coordinates;
     }
 
     char getEntity() {
-        return enitity;
+        return entity;
     }
-    
-    void setCoordinates(int x, int y){
-        x = newX;
-        y = newY;
-        
+
+    void setCoordinates(int x, int y) {
+        coordinates = std::make_tuple(x, y);
     }
-    void setEntity(char Entity){
-        entity = newEntity;
+
+    void setEntity(char entity) {
+        this->entity = entity;
     }
-    
+
 };
 
 #endif
