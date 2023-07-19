@@ -8,6 +8,7 @@ protected:
     std::tuple<int, int> coordinates;
     char entity;
 public:
+    virtual ~GridUnit() {}
     GridUnit(int x, int y, char entityType) : coordinates(std::make_tuple(x, y)), entity(entityType) {}
 
     std::tuple<int, int> getCoordinates() {
