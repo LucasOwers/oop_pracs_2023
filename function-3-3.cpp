@@ -8,16 +8,16 @@ double weighted_average(int array[], int n){
 
     double weighted_average = 0.0;
 
-    int countzeros = 0;
-    int countones = 0;
-    int counttwos = 0;
-    int countthrees = 0;
-    int countfours = 0;
-    int countfives = 0;
-    int countsixes = 0;
-    int countsevens = 0;
-    int counteights = 0;
-    int countnines = 0;
+    double countzeros = 0;
+    double countones = 0;
+    double counttwos = 0;
+    double countthrees = 0;
+    double countfours = 0;
+    double countfives = 0;
+    double countsixes = 0;
+    double countsevens = 0;
+    double counteights = 0;
+    double countnines = 0;
 
 
     for(int i = 0; i<n; i++){
