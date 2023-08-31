@@ -3,12 +3,12 @@
 using namespace std;
 
 Vehicle::Vehicle(int id){
-  ID = id;
+  int ID = id;
   timeOfEntry = time(nullptr);
 }
 
 int Vehicle::getID() const {
-  return ID;
+  return id;
 }
 
 time_t Vehicle::getEntryTime() const {

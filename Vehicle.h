@@ -7,7 +7,7 @@ using namespace std;
 class Vehicle {
 private:
   time_t timeOfEntry;
-  int id;                                                                                                                                                                   ID;
+  int id;                                                                                                                                                                   
 
 public:
   Vehicle(int id);
