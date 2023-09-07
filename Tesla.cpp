@@ -1,4 +1,3 @@
-#include "Car.h"
 #include "Tesla.h"
 
 Tesla::Tesla() : Car(), model_() {}

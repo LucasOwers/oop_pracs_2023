@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Car.cpp"
 #include "Tesla.h"
 #include <string>
 

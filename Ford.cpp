@@ -1,5 +1,5 @@
-#include "Car.h"
 #include "Ford.h"
+#include "Car.h"
 
 Ford::Ford() : Car(), badgeNumber_() {}
 Ford::Ford(int badgeNumber, int price) : Car(price), badgeNumber_(badgeNumber) {}
