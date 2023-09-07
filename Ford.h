@@ -11,7 +11,7 @@ Ford();
     void set_badge_number(int badgeNumber);
     int get_badge_number();
 
-    void set_fuel_litres(float litresOfFuel);
+    void set_litresOfFuel(float litresOfFuel);
     float get_litresOfFuel();
 
 
