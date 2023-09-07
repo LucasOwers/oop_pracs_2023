@@ -14,7 +14,7 @@ int main() {
     cout << "Car's price is: " << ford.get_price() << " dollars\n";
     cout << "Car's badge number is: " << ford.get_badge_number() << "\n";
     cout << "Cars emission:" << ford.get_emissions() << "\n";
-    cout << "Cars fuel after refueling: " << ford.get_fuel_litres() << "\n";
+    cout << "Cars fuel after refueling: " << ford.get_litresOfFuel() << "\n";
 
     return 0;
 }

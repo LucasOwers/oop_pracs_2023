@@ -48,6 +48,6 @@ void Ford::refuel(int litres){;
     }
 }
 
-float Ford::get_fuel_litres(){
+float Ford::get_litresOfFuel(){
     return litresOfFuel_;
 }

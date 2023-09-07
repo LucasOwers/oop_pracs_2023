@@ -12,7 +12,7 @@ Ford();
     int get_badge_number();
 
     void set_fuel_litres(float litresOfFuel);
-    float get_fuel_litres();
+    float get_litresOfFuel();
 
 
     void refuel (int litres);
