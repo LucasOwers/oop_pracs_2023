@@ -7,8 +7,6 @@ public:
     Car(int price);
     int emissions_;
 
-
-
     int get_price() const;
     void set_price(int price);
 
