@@ -13,12 +13,7 @@ void Ford::set_badge_number(int badgeNumber) {
 }
 
 void Ford::set_fuel_litres(float litresOfFuel) {
-    if (litresOfFuel < 0){
-        litresOfFuel = 0;
-    }
-    if (litresOfFuel > 60){
-        litresOfFuel = 60;
-    }
+    litresOfFuel = 60.0;
     litresOfFuel_ = litresOfFuel;
 }
 

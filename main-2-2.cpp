@@ -8,8 +8,7 @@ using namespace std;
 int main() {
 
     Ford ford(999, 2200);
-    ford.drive(800);
-    ford.set_fuel_litres(50);
+    ford.drive(1000);
     ford.refuel(5);
     cout << "Car's price is: " << ford.get_price() << " dollars\n";
     cout << "Car's badge number is: " << ford.get_badge_number() << "\n";
