@@ -18,7 +18,7 @@ private:
 
 public:
 
-void initGame(int numCharacters, int numObstacles, int gridWidth, int gridHeight) {
+void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight) {
     for (int i = 0; i < numCharacters; ++i) {
         Character = new character(i.i,C);
         }
