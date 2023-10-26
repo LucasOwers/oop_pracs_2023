@@ -7,7 +7,7 @@
 
 int main() {
 
-    Cell unit(3, 4, 'A');
+    Cell cell(3, 4, 'A');
 
   // Generate random positions
   std::tuple<int, int> pos1 = Utils::generateRandomPos(10, 10);
