@@ -1,5 +1,5 @@
-#include "Character.h"
 #include "Trap.h"
+#include "Character.h"
 #include <tuple>
 #include <iostream>
 
@@ -12,8 +12,8 @@ int main() {
 
     int posX, posY;
     std::tie(posX, posY) = character1.getPos();
-    std::cout << "The characters position after movement: (" << posX << ", " << posY << ")\n";
-    std::cout << "The characters type after the trap hits: " << character1.getType() << std::endl;
+    std::cout << "Avatar position after movement: (" << posX << ", " << posY << ")\n";
+    std::cout << "Avatar type after obstacle: " << character1.getType() << std::endl;
 
-    return 0;
+return 0;
 }
