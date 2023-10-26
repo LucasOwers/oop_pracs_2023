@@ -11,7 +11,7 @@ public:
     virtual ~Cell() {}
     Cell(int x, int y, char typeType) : position(std::make_tuple(x, y)), type(typeType) {}
 
-    std::tuple<int, int> getposition() {
+    std::tuple<int, int> getPos() {
         return position;
     }
 
@@ -19,7 +19,7 @@ public:
         return type;
     }
 
-    void setposition(int x, int y) {
+    void setPos(int x, int y) {
         position = std::make_tuple(x, y);
     }
 
